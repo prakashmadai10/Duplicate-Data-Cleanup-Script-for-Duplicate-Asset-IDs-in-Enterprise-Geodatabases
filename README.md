@@ -51,14 +51,28 @@ Nightly ETL cleanup where uniqueness is required.
 
 ## ⭐ Benefits
 
-✔ Ensures all IDs in the feature class are unique
-✔ Prevents work order and integration errors
-✔ Avoids conflicts with domain systems (Cityworks, Maximo, UN)
-✔ Enables successful GENERATE_ID attribute rules
-✔ Fully automated, safe, rollback-capable
-✔ Ideal for enterprise GIS data governance
-
+✔ Ensures all IDs in the feature class are unique  
+✔ Prevents work order and integration errors  
+✔ Avoids conflicts with domain systems (Cityworks, Maximo, UN)  
+✔ Enables successful GENERATE_ID attribute rules  
+✔ Fully automated, safe, rollback-capable  
+✔ Ideal for enterprise GIS data governance  
 ---
+
+## 📚 Libraries & Tools Used
+
+### **arcpy**
+
+The script uses **arcpy**, Esri’s official Python library for working with geodatabases and spatial data.
+arcpy provides:
+
+* **Data Access (arcpy.da)** for fast Search/Update Cursors
+* **Editor** sessions for safe transactional edits in SDE
+* **Geodatabase management** and field operations
+* **Messaging tools** (`AddMessage`, `AddError`) when running inside ArcGIS Pro or a Toolbox
+
+arcpy is included with **ArcGIS Pro** and requires no additional installation.
+
 
 ## 🧩 How the Script Works
 
@@ -111,14 +125,5 @@ This ensures:
 
 This script = **one-time cleanup**
 Attribute rule = **permanent prevention**
-
----
-
-## 📄 Example Implementation Snippet
-
-```python
-field_name = "HYDRANT_ID"  # Replace with your field (ASSET_ID, ADDRESS_ID, etc.)
-```
-Replace this with the ID field used in your dataset.
 
 ---
