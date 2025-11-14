@@ -115,12 +115,12 @@ Uses `arcpy.da.Editor` to:
 
 ---
 
-## ✔ After Cleanup: Enable Automatic GENERATE_ID Attribute Rule
+## ✔ After Cleanup: Enable Automatic NextSequenceValue ('Test') Attribute Rule
 
 Once all duplicates are removed, enable this attribute rule:
 
 ```
-GENERATE_ID()
+NextSequenceValue ('Test')
 ```
 
 This ensures:
@@ -144,28 +144,3 @@ Replace this with the ID field used in your dataset.
 
 ---
 
-## 🗂 Recommended Repository Structure
-
-```
-FixDuplicateUniqueIDs/
-│
-├── fix_unique_ids.py
-├── README.md
-└── your_connection.sde
-```
-
----
-
-## 📖 Optional Add-Ons
-
-If you want, I can generate:
-
-* A `.pyt` Toolbox version
-* A GP Tool dialog with user input parameters
-* A version using external logging to a text file
-* A scheduled-task compatible version
-* A version with email notifications after completion
-
----
-
-If you'd like, I can also generate **a short GitHub description**, **badges**, or **a sample screenshot folder structure**.
