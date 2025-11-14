@@ -6,7 +6,6 @@
 
 Everything is phrased clearly, professionally, and applicable to *any* feature layer.
 
----
 
 # 🔧 FixDuplicateUniqueIDs
 
@@ -23,7 +22,6 @@ Although the example uses `HYDRANT_ID`, the script is fully generic and works fo
 * `PROJECT_ID`
 * Custom primary keys used by Utilities, Engineering, Addressing, Public Works, etc.
 
----
 
 ## 🧠 When To Use This Tool
 
@@ -47,7 +45,6 @@ Manhole, pipe, or lift station IDs not unique after merges or append jobs.
 
 Nightly ETL cleanup where uniqueness is required.
 
----
 
 ## ⭐ Benefits
 
@@ -105,16 +102,13 @@ Uses `arcpy.da.Editor` to:
 * Commit on success
 * Roll back changes on failure
 
----
 
 ## ✔ After Cleanup: Enable Automatic NextSequenceValue ('Test') Attribute Rule
 
 Once all duplicates are removed, enable this attribute rule:
 
-```
 NextSequenceValue ('Test')
 URL : https://support.esri.com/en-us/knowledge-base/how-to-add-auto-sequential-values-using-attribute-rules-000024533
-```
 
 This ensures:
 
@@ -124,5 +118,3 @@ This ensures:
 
 This script = **one-time cleanup**
 Attribute rule = **permanent prevention**
-
----
