@@ -51,13 +51,12 @@ Nightly ETL cleanup where uniqueness is required.
 
 ## ⭐ Benefits
 
-✔ Ensures all IDs in the feature class are unique  
-✔ Prevents work order and integration errors  
-✔ Avoids conflicts with domain systems (Cityworks, Maximo, UN)  
-✔ Enables successful GENERATE_ID attribute rules  
-✔ Fully automated, safe, rollback-capable  
-✔ Ideal for enterprise GIS data governance  
----
+✔ Ensures all IDs in the feature class are unique
+✔ Prevents work order and integration errors
+✔ Avoids conflicts with domain systems (Cityworks, Maximo, Utility Network)
+✔ Enables successful GENERATE_ID attribute rules
+✔ Fully automated, safe, and rollback-capable
+✔ Ideal for enterprise GIS data governance
 
 ## 📚 Libraries & Tools Used
 
