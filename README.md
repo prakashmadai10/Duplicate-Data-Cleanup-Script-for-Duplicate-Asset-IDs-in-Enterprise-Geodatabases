@@ -6,7 +6,7 @@
 
 Everything is phrased clearly, professionally, and applicable to *any* feature layer.
 
-
+Note: This script is tested on String as Hydrant ID with numeric data type stored as string. You can expand the script for HYD-XXX formats.
 # 🔧 FixDuplicateUniqueIDs
 
 ### Duplicate Data Cleanup Tool for Duplicate Asset IDs in Enterprise Geodatabases (ArcGIS SDE)
